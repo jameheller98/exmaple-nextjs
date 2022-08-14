@@ -24,7 +24,7 @@ const CatCard: React.FC<TCatCard> = ({ tag, title, body, author, time }) => {
         </div>
         <div className={styles.card__body}>
           <span className={`${styles.tag} ${styles['tag-blue']}`}>{tag}</span>
-          <h4>{title}</h4>
+          <h2>{title}</h2>
           <p>{body}</p>
         </div>
         <div className={styles.card__footer}>
@@ -37,7 +37,7 @@ const CatCard: React.FC<TCatCard> = ({ tag, title, body, author, time }) => {
               height="40"
             />
             <div className={styles.user__info}>
-              <h5>{author}</h5>
+              <h3>{author}</h3>
               <small>{time}</small>
             </div>
           </div>
