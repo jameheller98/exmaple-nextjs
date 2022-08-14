@@ -29,12 +29,15 @@ const CatCard: React.FC<TCatCard> = ({ tag, title, body, author, time }) => {
         </div>
         <div className={styles.card__footer}>
           <div className={styles.user}>
-            <Image
-              src="https://i.pravatar.cc/40?img=3"
-              alt="user__image"
-              className={styles.user__image}
-              objectFit="contain"
-            />
+            <div className={styles.user__image}>
+              <Image
+                src="https://i.pravatar.cc/40?img=3"
+                alt="user__image"
+                style={{ borderRadius: '50%' }}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
             <div className={styles.user__info}>
               <h3>{author}</h3>
               <small>{time}</small>
