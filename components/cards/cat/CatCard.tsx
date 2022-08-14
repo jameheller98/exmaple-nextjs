@@ -33,8 +33,7 @@ const CatCard: React.FC<TCatCard> = ({ tag, title, body, author, time }) => {
               src="https://i.pravatar.cc/40?img=3"
               alt="user__image"
               className={styles.user__image}
-              width="40"
-              height="40"
+              objectFit="contain"
             />
             <div className={styles.user__info}>
               <h3>{author}</h3>
