@@ -9,6 +9,7 @@ class MyDocument extends Document {
             name="description"
             content="A website bring hight value and quality to customer through appearance"
           />
+          <meta name="robots" content="noindex,nofollow" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
