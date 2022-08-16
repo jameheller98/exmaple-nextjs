@@ -1,0 +1,27 @@
+{
+  "name": "GIN_SHOPPING",
+  "short_name": "GIN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/ico",
+      "sizes": "32x32",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/vercel.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/vercel.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
+}
