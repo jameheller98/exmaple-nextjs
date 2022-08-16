@@ -1,15 +1,18 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 export type TSearch = {};
 
 const Search: React.FC<TSearch> = () => {
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState<string>('');
+
   return (
     <form
       className="flex flex-col items-center gap-y-5"
       onSubmit={(e) => {
         e.preventDefault();
-        alert(`Action requested. Search for term: ${searchTerm}`);
+        router.push(`/results?search=${searchTerm}`);
       }}
     >
       <input
@@ -24,7 +27,11 @@ const Search: React.FC<TSearch> = () => {
         <button type="submit" className="btn-primary">
           Google Search
         </button>
-        <button type="submit" className="btn-primary">
+        <button
+          onClick={() => alert('FEATURE COMING SOON!')}
+          type="submit"
+          className="btn-primary"
+        >
           I&apos;m Feeling lucky
         </button>
       </div>
