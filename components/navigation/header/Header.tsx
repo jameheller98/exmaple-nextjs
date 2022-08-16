@@ -18,15 +18,15 @@ const Header: React.FC<THeader> = ({ className, ...headerProps }) => {
         {router.pathname === '/results' ? (
           <div className="flex items-center gap-11">
             <Link href="/">
-              <div style={{ width: 92, height: 30 }} className="cursor-pointer">
-                <Image
-                  src="/Google.png"
-                  alt="Google Logo"
-                  width={544}
-                  height={184}
-                  priority
-                />
-              </div>
+              <Image
+                src="/Google.png"
+                alt="Google Logo"
+                className="cursor-pointer"
+                width={92}
+                height={30}
+                layout="fixed"
+                priority
+              />
             </Link>
             <Search />
           </div>
