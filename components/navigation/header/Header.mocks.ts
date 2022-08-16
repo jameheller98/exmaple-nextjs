@@ -1,8 +1,6 @@
 import { THeader } from './Header';
 
-const base: THeader = {
-  sampleTextProp: 'Hello world!',
-};
+const base: THeader = {};
 
 export const mockHeaderProps = {
   base,

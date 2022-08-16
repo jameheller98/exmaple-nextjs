@@ -1,8 +1,6 @@
 import { TFooter } from './Footer';
 
-const base: TFooter = {
-  sampleTextProp: 'Hello world!',
-};
+const base: TFooter = {};
 
 export const mockFooterProps = {
   base,

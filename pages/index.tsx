@@ -9,13 +9,15 @@ const Home: NextPageWithLayout = () => {
   const { locale } = useRouter();
   return (
     <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
-      <Image
-        src="/Google.png"
-        alt="Google Logo"
-        width={272}
-        height={92}
-        priority
-      />
+      <div style={{ width: 272, height: 92 }}>
+        <Image
+          src="/Google.png"
+          alt="Google Logo"
+          width={544}
+          height={184}
+          priority
+        />
+      </div>
       <Search />
       <p>
         Google offered in:{' '}
