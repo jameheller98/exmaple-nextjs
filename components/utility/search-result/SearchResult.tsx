@@ -1,10 +1,7 @@
 import Link from 'next/link';
+import { ISearchData } from '../../../lib/search/type';
 
-export type TSearchResult = {
-  url: string;
-  title: string;
-  text: string;
-} & React.ComponentPropsWithoutRef<'div'>;
+export type TSearchResult = ISearchData & React.ComponentPropsWithoutRef<'div'>;
 
 const SearchResult: React.FC<TSearchResult> = ({
   url,
